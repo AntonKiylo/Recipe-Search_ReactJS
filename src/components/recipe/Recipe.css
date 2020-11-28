@@ -1,0 +1,22 @@
+.recipe {
+  width: 360px;
+  border: 1px solid #0000003b;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #f1f1f1;
+}
+
+.recipe-image {
+  border: 1px solid #0000003b;
+  padding: 7px;
+  border-radius: 50%;
+  transform: scale(0.95, 0.95);
+  filter: grayscale(70%);
+  transition: 400ms;
+}
+
+.recipe-image:hover {
+  transform: scale(1, 1);
+  filter: grayscale(0);
+}
