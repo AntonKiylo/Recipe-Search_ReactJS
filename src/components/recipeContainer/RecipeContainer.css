@@ -1,5 +1,6 @@
 .recipe-container {
   text-align: center;
+  overflow-y: auto;
 }
 
 .recipes-list {

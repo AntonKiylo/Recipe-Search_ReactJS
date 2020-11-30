@@ -3,8 +3,15 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #003269;
+}
+
+#root {
+  display: grid;
+  grid-template-rows: 80px 1fr;
+  height: 100vh;
 }
 
 ul {
-  list-style: none;
+  padding-inline-start: 26px;
 }

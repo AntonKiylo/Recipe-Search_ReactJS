@@ -1,17 +1,18 @@
 import './RecipeContainer.css'
 import Recipe from '../recipe/Recipe'
+import Loader from '../loader/Loader'
 
-const RecipeContainer = ({recipes}) => {
+const RecipeContainer = ({ recipes }) => {
   const recipesList = recipes.map(item => {
-    return(
+    return (
       <Recipe key={Math.round(Math.random() * 100000000)} item={item.recipe} />
     )
   })
 
-  return(
+  return (
     <div className='recipe-container'>
-      <h3>We have found {recipes.length} recipes</h3>
-      <div className='recipes-list'>{recipesList}</div>
+      <h2>We have found {recipes.length} recipes</h2>
+      {recipes.length === 0 ? <Loader /> : <div className='recipes-list'>{recipesList}</div>}
     </div>
   )
 }

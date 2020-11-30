@@ -1,15 +1,22 @@
 .recipe {
-  width: 360px;
+  width: 380px;
   border: 1px solid #0000003b;
   border-radius: 12px;
   padding: 10px;
   margin: 10px;
-  background-color: #f1f1f1;
+  background-color: #a3d5ff;
+}
+
+.recipe p {
+  margin: 6px 0;
+}
+
+.recipe li {
+  margin: 6px 0;
 }
 
 .recipe-image {
-  border: 1px solid #0000003b;
-  padding: 7px;
+  border: 9px solid #acf39d;
   border-radius: 50%;
   transform: scale(0.95, 0.95);
   filter: grayscale(70%);

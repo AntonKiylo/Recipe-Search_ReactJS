@@ -7,8 +7,8 @@ const Recipe = ({item}) => {
 
   return(
     <div className='recipe'>
-      <h4>{item.label}</h4>
-      <p>Calories {item.calories}</p>
+      <h3>{item.label}</h3>
+      <p>Calories: {Math.ceil(item.calories)}</p>
       <a href={item.url} target='blank'>
         <img src={item.image} alt={item.label} className='recipe-image' />
       </a>
